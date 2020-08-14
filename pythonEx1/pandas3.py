@@ -17,3 +17,8 @@ importDate = ["1/20/14", "1/30/14"]
 df_inset = df.loc[df["Purchase Date"].isin(importDate),:]
 print(df_inset)
 print(type(df_inset))
+df_inset.to_csv(outfile, index=False)
+'''
+to_csv : DataFrame 객체를 csv 파일로 변환
+index = False : index는 파일에서 제외
+'''
